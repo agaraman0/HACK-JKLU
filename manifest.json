@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Test",
+    "version": "1.0.0",
+    "content_security_policy": {
+        "script-src": "self",
+        "object-src": "self"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["Content.js"]
+    }],
+    "action": {
+        "default_popup": "Popup.html",
+        "default_title": "Online Course"
+    }
+}
